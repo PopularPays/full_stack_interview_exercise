@@ -1,4 +1,4 @@
-# Rails REST API -- Interview Practice Project
+# RAILS REST API -- Interview Practice Project
 The objective of this practice project is to build an API only Rails application. This application should run locally and consist of several API endpoints and Rails models.
 
 ## Models
@@ -23,9 +23,11 @@ When the `state` is set to `completed` a `gig payment` should automatically be c
 
 ### Gig Payments
 
-_Attributes_: `state`
+_Attributes_: `state` and `amount_in_cents`
 
 The initial value of `state` is `pending`. The other possible value is `complete`. When the `state` is set to `complete` the state of the related `gig` should be set to `paid`.
+
+The `amount_in_cents` can be an integer that with division by 100 could be converted from cents to dollars. The value can be arbitrary.
 
 ## API Endpoints
 
@@ -105,9 +107,27 @@ The other part is the scalability. How would you architect a system to handle th
 
 Add whatever test coverage you deem necessary. Please use the [rspec](https://github.com/rspec/rspec-rails) testing framework.
 
+## UI/UX
+
+Our web clients are written in Ember.js - a javascript framework that we to organize business logic on the front end as well as do some of the heavy lifting associated with the request/response cycle and interactive behavior.
+
+Based on the API you have created from the requirements above, we could build a UI that renders each of the gigs eligible for payment.  Explain how you would layout the UI based on [Ember's 5 core concepts](https://emberigniter.com/5-essential-ember-concepts/) - Routes, controllers, models, components (you can ignore services for this exercise).  It's ok if you're not familiar with Ember and there is exact wrong or correct answer. This is an exercise in how you think about laying out a UI given a set of requirements.
+
+These requirements:
+
+1.) A header titled 'Unpaid Gigs'
+
+2.) A main content area with a table
+
+3.) A table header within the main content area with columns: `Creator Name`, `Brand Name`, `Amount in Dollars Owed`
+
+4.) Table rows within the main content area with the data to fill in the various columns from the header
+
+
+What endpoints would you need to hit to fill in the data?  How would you lay out the components within the top-level route/controller/template - assuming we would use 1 route, controller, and template to fill the full screen and render components within UI to fill in the requirements listed above.
+
 ## Deliverables
 
-To submit your project please archive the project folder in a ZIP and email it to `justin@popularpays.com` with the subject `Interview Practice Submission - <your name>`.
+To submit your project please archive the project folder in a ZIP and email it to `justin@lightricks.com` with the subject `Interview Practice Submission - <your name>`.
 
 If the file size is too large to be attached to an email then upload it to Dropbox or Google Drive and email the link of the ZIP file.
-
