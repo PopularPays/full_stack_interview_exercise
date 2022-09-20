@@ -111,17 +111,17 @@ Add whatever test coverage you deem necessary. Please use the [rspec](https://gi
 
 Our web clients are written in Ember.js - a javascript framework that we to organize business logic on the front end as well as do some of the heavy lifting associated with the request/response cycle and interactive behavior.
 
-Based on the API you have created from the requirements above, we could build a UI that renders each of the gigs eligible for payment.  Explain how you would layout the UI based on [Ember's 5 core concepts](https://emberigniter.com/5-essential-ember-concepts/) - Routes, controllers, models, components (you can ignore services for this exercise).  It's ok if you're not familiar with Ember and there is exact wrong or correct answer. This is an exercise in how you think about laying out a UI given a set of requirements.
+Based on the API you have created from the requirements above, we could build a UI that renders each of the gigs eligible for payment.  Explain how you would layout the UI based on [Ember's 5 core concepts](https://emberigniter.com/5-essential-ember-concepts/) - Routes, controllers, models, components (you can ignore services for this exercise).  It's ok if you're not familiar with Ember - This is an exercise in how you think about laying out a UI given a set of requirements.
 
 These requirements:
 
-1.) A header titled 'Unpaid Gigs'
+1.) A header titled 'Unpaid Gigs'.
 
-2.) A main content area with a table
+2.) A main content area that contains a table.
 
-3.) A table header within the main content area with columns: `Creator Name`, `Brand Name`, `Amount in Dollars Owed`
+3.) A table header within the main content area with columns: `Creator Name`, `Brand Name`, `Amount in Dollars Owed`.
 
-4.) Table rows within the main content area with the data to fill in the various columns from the header
+4.) Table rows within the main content area with the data to fill in the various columns from the table header/
 
 
 What endpoints would you need to hit to fill in the data?  How would you lay out the components within the top-level route/controller/template - assuming we would use 1 route, controller, and template to fill the full screen and render components within UI to fill in the requirements listed above.
